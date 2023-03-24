@@ -1,0 +1,144 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #3eaf82;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center .icon {
+  cursor: pointer;
+}
+.center .icon .line {
+  width: 80px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2901960784);
+}
+.center .icon .l1,
+.center .icon .l2 {
+  margin-bottom: 14px;
+}
+.center .icon .l1 {
+  animation: l1-animation-reverse 0.6s forwards;
+  animation-iteration-count: 1;
+}
+.center .icon .l2 {
+  animation: l2-animation-reverse 0.6s forwards;
+  animation-iteration-count: 1;
+}
+.center .icon .l3 {
+  animation: l3-animation-reverse 0.6s forwards;
+  animation-iteration-count: 1;
+}
+.center .icon.x .l1 {
+  animation: l1-animation 0.6s forwards;
+  animation-iteration-count: 1;
+}
+.center .icon.x .l2 {
+  animation: l2-animation 0.6s forwards;
+  animation-iteration-count: 1;
+}
+.center .icon.x .l3 {
+  animation: l3-animation 0.6s forwards;
+  animation-iteration-count: 1;
+}
+
+/* L1 Animation */
+@keyframes l1-animation {
+  0% {
+    margin-bottom: none;
+  }
+  50% {
+    margin-bottom: -14.5px;
+    transform: rotate(0);
+  }
+  100% {
+    margin-bottom: -14.5px;
+    transform: rotate(45deg);
+  }
+}
+@keyframes l1-animation-reverse {
+  0% {
+    margin-bottom: -14.5px;
+    transform: rotate(45deg);
+  }
+  50% {
+    margin-bottom: -14.5px;
+    transform: rotate(0);
+  }
+  100% {
+    margin-bottom: none;
+  }
+}
+/* L2 Animation */
+@keyframes l2-animation {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes l2-animation-reverse {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+/* L3 Animation */
+@keyframes l3-animation {
+  0% {
+    margin-top: none;
+  }
+  50% {
+    margin-top: -14.5px;
+    transform: rotate(0);
+  }
+  100% {
+    margin-top: -14.5px;
+    transform: rotate(135deg);
+  }
+}
+@keyframes l3-animation-reverse {
+  0% {
+    margin-top: -14.5px;
+    transform: rotate(135deg);
+  }
+  50% {
+    margin-top: -14.5px;
+    transform: rotate(0);
+  }
+  100% {
+    margin-top: none;
+  }
+}

@@ -1,0 +1,154 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #272c33;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #7cdffc;
+  height: 42%;
+  width: 42%;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: opacity 5s ease-in-out infinite;
+  /* SUN */
+  /* END SUN */
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 100;
+  }
+  75% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.center .sun-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 32px;
+  height: 230px;
+  animation: sun 5s ease-in-out;
+  animation-iteration-count: infinite;
+}
+.center .sun-line .sun {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ffee00;
+}
+@keyframes sun {
+  0% {
+    transform: translate(-50%, -35%) rotate(-90deg);
+  }
+  25% {
+    transform: translate(-50%, -35%) rotate(-35deg);
+  }
+  50% {
+    transform: translate(-50%, -35%) rotate(-35deg);
+  }
+  100% {
+    transform: translate(-50%, -35%) rotate(90deg);
+  }
+}
+.center .pyramid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 100px;
+  transform: translate(-55%, -12%) rotate(50deg);
+  overflow: hidden;
+  animation: pyramid 5s ease-in-out infinite;
+}
+@keyframes pyramid {
+  0% {
+    background-color: #f1f1f1;
+  }
+  55% {
+    background-color: #f1f1f1;
+  }
+  100% {
+    background-color: #b6b7ba;
+  }
+}
+.center .pyramid .shadow {
+  width: 80px;
+  height: 40px;
+  transform: translateY(-23px) rotate(25deg);
+  animation: shadow 5s ease-in-out infinite;
+}
+@keyframes shadow {
+  0% {
+    background-color: #b6b7ba;
+  }
+  25% {
+    background-color: #cfd0d4;
+  }
+  55% {
+    background-color: #cfd0d4;
+  }
+  100% {
+    background-color: #f1f1f1;
+  }
+}
+.center .ground {
+  position: absolute;
+  bottom: 0;
+  height: 55px;
+  width: 100%;
+  background: #efde75;
+  overflow: hidden;
+}
+.center .ground .shadow {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 220px;
+  height: 60px;
+  background: #baae61;
+  animation: ground-shadow 5s linear infinite;
+}
+@keyframes ground-shadow {
+  0% {
+    clip-path: polygon(28px 0, 130% 10%, 62% 0);
+  }
+  20% {
+    clip-path: polygon(28px 0, 120% 60%, 62% 0);
+  }
+  50% {
+    clip-path: polygon(28px 0, 120% 60%, 62% 0);
+  }
+  70% {
+    clip-path: polygon(28px 0, 40% 20%, 62% 0);
+  }
+  90% {
+    clip-path: polygon(28px 0, -110% 80%, 62% 0);
+  }
+  100% {
+    clip-path: polygon(28px 0, -110% 20%, 62% 0);
+  }
+}

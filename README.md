@@ -6,6 +6,9 @@ This is the archive of my daily challenges; my progress can also be viewed on th
 
 This is a backup archive of the challenges that are firstly hosted on Codepen as it is required to submit them to the official site.
 
+I also keep updated a showcase file to let everyone able to watch the results locally, you just need to clone the repository and open the file /Showcase/index.html.
+I keep it updated using a quick program I made so don't keep to much attention to its formatting or efficiency, it's just for showcase purposes.
+
 ## Challenge Log
 
 | Day | Status | Date | Link |
