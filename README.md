@@ -12,10 +12,10 @@ This is a backup archive of the challenges that are firstly hosted on Codepen as
 
 | Day | Status | Date | Link |
 |:--|:--|:--|:--|
-| 1 | Complete | 2023-03-23 | [Day 1](https://100dayscss.com/days/1/) |
-| 2 | Complete | 2023-03-24 | [Day 2](https://100dayscss.com/days/2/) |
-| 3 | Complete | 2023-03-25 | [Day 3](https://100dayscss.com/days/3/) |
-| 4 | Complete | 2023-03-26 | [Day 4](https://100dayscss.com/days/4/) |
+| 1 | Complete | 2023-03-21 | [Day 1](https://100dayscss.com/days/1/) |
+| 2 | Complete | 2023-03-22 | [Day 2](https://100dayscss.com/days/2/) |
+| 3 | Complete | 2023-03-23 | [Day 3](https://100dayscss.com/days/3/) |
+| 4 | Complete | 2023-03-24 | [Day 4](https://100dayscss.com/days/4/) |
 | 5 | To Do |  | [Day 5](https://100dayscss.com/days/5/) |
 | 6 | To Do |  | [Day 6](https://100dayscss.com/days/6/) |
 | 7 | To Do |  | [Day 7](https://100dayscss.com/days/7/) |
