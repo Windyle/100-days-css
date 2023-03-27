@@ -12,7 +12,7 @@ I keep it updated using a quick program I made so don't keep to much attention t
 ## Challenge Log
 
 | Day | Status   | Date       | Link                                        | Title        |
-| :-- | :------- | :--------- | :------------------------------------------ | :----------- | --- |
+| :-- | :------- | :--------- | :------------------------------------------ | :----------- |
 | 1   | Complete | 2023-03-23 | [Day 1](https://100dayscss.com/days/1/)     | 100 Days CSS |
 | 2   | Complete | 2023-03-24 | [Day 2](https://100dayscss.com/days/2/)     | Menu Icon    |
 | 3   | Complete | 2023-03-25 | [Day 3](https://100dayscss.com/days/3/)     | The Pyramide |
@@ -21,7 +21,7 @@ I keep it updated using a quick program I made so don't keep to much attention t
 | 6   | To Do    |            | [Day 6](https://100dayscss.com/days/6/)     | Statistic    |
 | 7   | To Do    |            | [Day 7](https://100dayscss.com/days/7/)     |              |
 | 8   | To Do    |            | [Day 8](https://100dayscss.com/days/8/)     |              |
-| 9   | To Do    |            | [Day 9](https://100dayscss.com/days/9/)     |              |     |
+| 9   | To Do    |            | [Day 9](https://100dayscss.com/days/9/)     |              |
 | 10  | To Do    |            | [Day 10](https://100dayscss.com/days/10/)   |              |
 | 11  | To Do    |            | [Day 11](https://100dayscss.com/days/11/)   |              |
 | 12  | To Do    |            | [Day 12](https://100dayscss.com/days/12/)   |              |
@@ -113,4 +113,3 @@ I keep it updated using a quick program I made so don't keep to much attention t
 | 98  | To Do    |            | [Day 98](https://100dayscss.com/days/98/)   |              |
 | 99  | To Do    |            | [Day 99](https://100dayscss.com/days/99/)   |              |
 | 100 | To Do    |            | [Day 100](https://100dayscss.com/days/100/) |              |
-|  |
