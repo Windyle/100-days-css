@@ -1,0 +1,368 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #42a7a1;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.2);
+}
+.center .card {
+  width: 280px;
+  height: 210px;
+  border-radius: 3px;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+}
+.center .card .header {
+  background-color: #f1ba64;
+  display: grid;
+  grid-template-columns: 180px 100px;
+  color: rgba(255, 255, 255, 0.9);
+  padding-top: 3px;
+}
+.center .card .header .left-area {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  justify-content: center;
+}
+.center .card .header .left-area h1 {
+  font-size: 0.9em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.center .card .header .left-area h2 {
+  font-size: 0.75em;
+  margin-top: 0;
+}
+.center .card .header .right-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 15px;
+}
+.center .card .header .right-area h1 {
+  font-size: 0.9em;
+  margin-top: 0;
+  text-align: end;
+}
+.center .card .header .right-area h2 {
+  font-size: 0.75em;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: end;
+}
+.center .card .content {
+  display: grid;
+  grid-template-rows: 30px 1fr 35px;
+}
+.center .card .content .legend {
+  display: flex;
+  flex-direction: row;
+  padding-right: 8px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.center .card .content .legend > div {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  align-items: flex-end;
+  font-size: 9px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+.center .card .content .legend > div p {
+  margin: 0;
+}
+.center .card .content .legend .stroke {
+  width: 12px;
+  height: 3px;
+  margin-right: 8px;
+  margin-bottom: 2px;
+  border-radius: 2px;
+}
+.center .card .content .legend .l1 .stroke {
+  background-color: #fa7a7a;
+}
+.center .card .content .legend .l2 {
+  margin-left: 20px;
+}
+.center .card .content .legend .l2 .stroke {
+  background-color: #82a7ff;
+}
+.center .card .content .chart .guideline-container {
+  z-index: -10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.center .card .content .chart .guideline-container .guideline {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.center .card .content .chart .red-svg {
+  position: absolute;
+  top: 95px;
+  left: 10px;
+}
+.center .card .content .chart .red-svg polyline {
+  stroke: #fa7a7a;
+  stroke-width: 2;
+  stroke-linecap: round;
+  fill: none;
+}
+.center .card .content .chart .red-line {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.center .card .content .chart .red-line .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fa7a7a;
+}
+.center .card .content .chart .red-line .dot.d1 {
+  margin-top: 32px;
+}
+.center .card .content .chart .red-line .dot.d2 {
+  margin-top: -33px;
+}
+.center .card .content .chart .red-line .dot.d3 {
+  margin-top: -13px;
+}
+.center .card .content .chart .red-line .dot.d4 {
+  margin-top: -36px;
+}
+.center .card .content .chart .red-line .dot.d5 {
+  margin-top: 14px;
+}
+.center .card .content .chart .red-line .dot.d6 {
+  margin-top: 35px;
+}
+.center .card .content .chart .red-line .dot.d7 {
+  margin-top: -20px;
+}
+.center .card .content .chart .red-line-tooltip {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+.center .card .content .chart .red-line-tooltip .tooltip {
+  width: 26px;
+  height: 20px;
+  border-radius: 3px;
+  background: #fa7a7a;
+  color: #fff;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.center .card .content .chart .red-line-tooltip .tooltip.hover {
+  transform: translateY(0) !important;
+  opacity: 100 !important;
+}
+.center .card .content .chart .red-line-tooltip .tooltip .text {
+  position: relative;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+}
+.center .card .content .chart .red-line-tooltip .tooltip .arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fa7a7a;
+  position: relative;
+  left: 50%;
+  top: 8px;
+  transform: translateX(-50%);
+}
+.center .card .content .chart .red-line-tooltip .tooltip.t1 {
+  margin-top: -8px;
+}
+.center .card .content .chart .red-line-tooltip .tooltip.t2 {
+  margin-top: -73px;
+}
+.center .card .content .chart .red-line-tooltip .tooltip.t3 {
+  margin-top: -54px;
+}
+.center .card .content .chart .red-line-tooltip .tooltip.t4 {
+  margin-top: -75px;
+}
+.center .card .content .chart .red-line-tooltip .tooltip.t5 {
+  margin-top: -25px;
+}
+.center .card .content .chart .red-line-tooltip .tooltip.t6 {
+  margin-top: -5px;
+}
+.center .card .content .chart .red-line-tooltip .tooltip.t7 {
+  margin-top: -60px;
+}
+.center .card .content .chart .blue-svg {
+  position: absolute;
+  top: 90px;
+  left: 10px;
+}
+.center .card .content .chart .blue-svg polyline {
+  stroke: #82a7ff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  fill: none;
+}
+.center .card .content .chart .blue-line {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+.center .card .content .chart .blue-line .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #82a7ff;
+  z-index: 10;
+}
+.center .card .content .chart .blue-line .dot.d1 {
+  margin-top: 32px;
+}
+.center .card .content .chart .blue-line .dot.d2 {
+  margin-top: 10px;
+}
+.center .card .content .chart .blue-line .dot.d3 {
+  margin-top: 40px;
+}
+.center .card .content .chart .blue-line .dot.d4 {
+  margin-top: 20px;
+}
+.center .card .content .chart .blue-line .dot.d5 {
+  margin-top: 32px;
+}
+.center .card .content .chart .blue-line .dot.d6 {
+  margin-top: 60px;
+}
+.center .card .content .chart .blue-line .dot.d7 {
+  margin-top: 38px;
+}
+.center .card .content .chart .blue-line-tooltip {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+.center .card .content .chart .blue-line-tooltip .tooltip {
+  width: 26px;
+  height: 20px;
+  border-radius: 3px;
+  background: #82a7ff;
+  color: #fff;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.center .card .content .chart .blue-line-tooltip .tooltip.hover {
+  transform: translateY(0) !important;
+  opacity: 100 !important;
+  z-index: 12;
+}
+.center .card .content .chart .blue-line-tooltip .tooltip .text {
+  position: relative;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+}
+.center .card .content .chart .blue-line-tooltip .tooltip .arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #82a7ff;
+  position: relative;
+  left: 50%;
+  top: 8px;
+  transform: translateX(-50%);
+}
+.center .card .content .chart .blue-line-tooltip .tooltip.t1 {
+  margin-top: 12px;
+}
+.center .card .content .chart .blue-line-tooltip .tooltip.t2 {
+  margin-top: -10px;
+}
+.center .card .content .chart .blue-line-tooltip .tooltip.t3 {
+  margin-top: 20px;
+}
+.center .card .content .chart .blue-line-tooltip .tooltip.t4 {
+  margin-top: 0px;
+}
+.center .card .content .chart .blue-line-tooltip .tooltip.t5 {
+  margin-top: 10px;
+}
+.center .card .content .chart .blue-line-tooltip .tooltip.t6 {
+  margin-top: 40px;
+}
+.center .card .content .chart .blue-line-tooltip .tooltip.t7 {
+  margin-top: 18px;
+}
+.center .card .content .days {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-size: 9px;
+  font-weight: bold;
+  margin-top: -5px;
+  color: rgba(0, 0, 0, 0.35);
+}
