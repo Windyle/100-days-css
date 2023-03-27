@@ -17,8 +17,8 @@ I keep it updated using a quick program I made so don't keep to much attention t
 | 2   | Complete | 2023-03-24 | [Day 2](https://100dayscss.com/days/2/)     | Menu Icon    |
 | 3   | Complete | 2023-03-25 | [Day 3](https://100dayscss.com/days/3/)     | The Pyramide |
 | 4   | Complete | 2023-03-26 | [Day 4](https://100dayscss.com/days/4/)     | Loading      |
-| 5   | Complete | 2023-03-27 | [Day 5](https://100dayscss.com/days/5/)     |              |
-| 6   | To Do    |            | [Day 6](https://100dayscss.com/days/6/)     | Statistic    |
+| 5   | Complete | 2023-03-27 | [Day 5](https://100dayscss.com/days/5/)     | Statistic    |
+| 6   | To Do    |            | [Day 6](https://100dayscss.com/days/6/)     |              |
 | 7   | To Do    |            | [Day 7](https://100dayscss.com/days/7/)     |              |
 | 8   | To Do    |            | [Day 8](https://100dayscss.com/days/8/)     |              |
 | 9   | To Do    |            | [Day 9](https://100dayscss.com/days/9/)     |              |
